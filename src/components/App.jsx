@@ -5,8 +5,8 @@ import Note from "./Note";
 import CreateArea from "./CreateArea";
 import { v4 as uuidv4 } from 'uuid';
 
-function App() {    
 
+function App() {    
     const [notes, setNotes] = useState([]);
 
     function addNote(note){
@@ -27,7 +27,7 @@ function App() {
         <div>
             <Header />
             <CreateArea 
-                onAdd={addNote}
+                onAdd = {addNote}
             /> 
             {notes.map((noteItem, index) => <Note 
                 key = {uuidv4()}
